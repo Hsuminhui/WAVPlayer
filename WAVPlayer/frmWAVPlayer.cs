@@ -17,6 +17,8 @@ namespace WAVPlayer
         public frmWAVPlayer()
         {
             InitializeComponent();
+            pictureBox1.Image = Properties.Resources.music;
+            statuslbl.Text = "無音樂撥放";
         }
 
         
@@ -37,6 +39,8 @@ namespace WAVPlayer
             player1.SoundLocation = txtPath.Text; // 指定音效所在路徑檔名
             player1.Load(); // 載入音效檔資料
             player1.Play(); // 播放音效
+            pictureBox1.Image = Properties.Resources.music_gif;
+            statuslbl.Text = "音樂播放中...";
         }
 
         private void btnLoop_Click(object sender, EventArgs e)
@@ -44,6 +48,8 @@ namespace WAVPlayer
             
             SoundPlayer player2 = new SoundPlayer(txtPath.Text);
             player2.PlayLooping();// 重複播放
+            pictureBox1.Image = Properties.Resources.music_gif;
+            statuslbl.Text = "音樂播放中...";
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -53,6 +59,8 @@ namespace WAVPlayer
             SoundPlayer player3 = new SoundPlayer(fsWAV);
             player3.Stop();// 停止播放
             fsWAV.Close(); // 關閉串流
+            pictureBox1.Image = Properties.Resources.music;
+            statuslbl.Text = "音樂停止...";
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
@@ -68,5 +76,7 @@ namespace WAVPlayer
                 e.Cancel = true;
             }
         }
+
+       
     }
 }
