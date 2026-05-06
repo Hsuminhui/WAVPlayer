@@ -17,7 +17,7 @@ namespace WAVPlayer
         public frmWAVPlayer()
         {
             InitializeComponent();
-            pictureBox1.Image = Properties.Resources.music;
+            pictureBox1.Image = Properties.Resources.music2;
             statuslbl.Text = "無音樂撥放";
         }
 
@@ -59,7 +59,7 @@ namespace WAVPlayer
             SoundPlayer player3 = new SoundPlayer(fsWAV);
             player3.Stop();// 停止播放
             fsWAV.Close(); // 關閉串流
-            pictureBox1.Image = Properties.Resources.music;
+            pictureBox1.Image = Properties.Resources.music2;
             statuslbl.Text = "音樂停止...";
         }
 

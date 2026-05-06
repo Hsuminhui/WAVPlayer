@@ -86,5 +86,11 @@
   <ItemGroup>
     <None Include="Resources\47374641_MotionElements_music-note-and-symbols-on-curved-lines-vimage.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螢幕擷取畫面 2026-05-06 142059.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\螢幕擷取畫面 2026-05-06 142418.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
